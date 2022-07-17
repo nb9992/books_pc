@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+body { font-family:'Gentium Book Plus', Helvetica, sans-serif; background:#e3e3e3;}
+
+/*헤더*/
+header {}
+
+.header_top { width:1440px; height:30px; margin:0 auto; position:relative; }
+    .util { display:flex; position:absolute; right:0; }
+    .util li {}
+    .util a { color:#444; }
+    .util a:hover { text-decoration:underline; }
+
+.header_bottom { width:1440px; height:150px; margin:0 auto;  }
+    .bottom_wrap { display:flex; }
+    .bottom_wrap > .barBox { display:block;position:relative;}
+    .barBox > .bar { position:absolute; top:40px; left:3px; display:block; width:220px; height:30px; background:#ffcd41; transition:0.5s ease-out; z-index:-1;}
+    .logo { font-weight:bold; font-size:70px; }
+    .logo a { color:#444; }
+    .menu { margin-left:200px;}
+    .menu li { float:left; margin-top:40px; margin-right:92px;}
+    .menu .on { color:#ffcd41; }
+    .menu a { font-size:20px; color:#444; }
+    .menu a:hover { color:#ffcd41; transition:0.5s; }
+    .menu > li > a.search_btn { display:inline-block; width:24px; height:24px; margin-top: 4px; background:url('../img/search2.png') no-repeat; transition:0.5s; }
+    .menu > li > a.search_btn:hover { background:url('../img/search.png') no-repeat; }
+
+
+
+
+/*.section*/
+section { width:1440px; margin:0 auto; height:530px; border:1px solid red; }
+.book {position:relative; margin-top:50px; }
+.book p {margin-left:126px;}
+.book .main_h { font-size:30px;}
+.book .main_h2 { margin-left:230px; font-size:26px; margin-bottom:35px;}
+.book .main_content { font-family:'Noto Sans KR'; font-size:14px; }
+.book .main_st { text-decoration:underline; color:#444; }
+.book .main_st a { color:#444; }
+
+.book .imgs {position:absolute; margin-left:600px;  margin-right:126px; top:0px; filter:drop-shadow(10px 10px 15px #b6b6b6); }
+.book img { width:327px; height:423px; }
+.book img:nth-child(1) { margin-right:52px; }
+
+
+.swiper {
+    width: 1440px;
+    height: 530px;
+}
+
+
+/*main_two*/
+
+.main2 { width:1440px; margin:0 auto; height:700px; margin-top:50px; background:#f1f1f1;}
+.main2 p {text-align:center; font-size:28px; padding-top:30px; padding-bottom:40px;}
+
+.main2_wrap { display:flex; margin:auto; padding-bottom:60px;}
+.main2_wrap .Recommended { display:inline-block;width:272px; flex:1; text-align:center; }
+
+.main2_wrap .click_book1 { display:inline-block; background:url('../img/Recommended1.png'); width:272px; height:390px;}
+.main2_wrap .click_book1:hover {display:inline-block; background:url('../img/Recommended1_2.png'); width:272px; height:390px; transition:0.7s;}
+
+.main2_wrap .click_book2 { display:inline-block; background:url('../img/Recommended2.png'); width:272px; height:390px;}
+.main2_wrap .click_book2:hover {display:inline-block; background:url('../img/Recommended2_2.png'); width:272px; height:390px; transition:0.7s;}
+
+.main2_wrap .click_book3 { display:inline-block; background:url('../img/Recommended3.png'); width:272px; height:390px;}
+.main2_wrap .click_book3:hover {display:inline-block; background:url('../img/Recommended3_2.png'); width:272px; height:390px; transition:0.7s;}
+
+
+.main2_wrap .Re_bookH { display:block; text-align:center; font-size:17px; margin-top:20px;}
+.main2_wrap .Re_comment { display:block; text-align:center; margin-top:10px; font-family:'Noto Sans KR'; font-size:14px; }
+
+
+
+.youtube { position:relative; width:1440px; margin:0 auto;  padding-top:50px; margin-bottom:50px;}
+.youtube iframe { margin-left:105px; }
+.youtube .you_H { position:absolute; color:#ffcd41; font-size:51px; top:130px;right:105px;}
+.youtube .you_C { position:absolute; right:105px; top:230px; font-family:'Noto Sans KR';}
+.youtube .you_C2 { position:absolute; right:105px; top:255px; font-family:'Noto Sans KR';}
+
+
+
+/*슬라이더 부분*/
+
+.swiper-pagination-bullet-active { background:#ffcd41;}
+
+
+/*돋보기버튼 검색*/
+
+.search_pop { display:none; position:fixed; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,0.9); z-index:101; }
+
+.search_pop_wrap {position:absolute; top:20%; left:50%; transform:translate(-50%, -50%); width:800px;}
+
+.search_box {border-bottom:2px solid #ccc;}
+.search_box input {width:800px; height:80px; font-size:50px; color:#ffcd41; padding-left:10px;outline:none; border: none; font-weight:700; font-family:'Noto Sans KR'; background:0;}
+.search_box button { background:url(../img/search48.png) no-repeat; position:absolute; right:8px; top:15px; width:48px; height:48px; text-indent:-9999px; cursor:pointer; border:none; }
+
+.close { position:absolute;  width:48px; height:48px; background:url('../img/close.png') no-repeat; top:50px; right:70px;
+    text-indent:-9999px; }
+
+
+
+/*푸터*/
+footer { position:relative; width:1440px; height:480px; margin:0 auto; background:#4f4f4f; }
+
+.foot_logo { position:absolute; display:inline-block; font-size:70px; color:#fff; font-weight:700; left:292px;
+top:50px;}
+
+.foot_con { color:#fff; }
+    .foot_con1 { position:absolute; top:80px; font-family:'Noto Sans KR'; left:584px; font-size:14px;}
+    .foot_con2 { position:absolute; top:170px; left:584px; font-size:14px;}
+    .foot_con3 {  position:absolute; top:250px; left:584px; font-size:14px; }
+    .foot_con4 {  position:absolute; top:300px; left:584px; font-size:14px; color:#fff; text-decoration:underline; }
+
+.sns { position:absolute; left:292px; top:389px;}
+    .sns1 {  }
+    .sns1 > li { display:inline-block; margin-right:163px;}
+    .sns1 > li:last-child { margin-right:0; margin-left:-81px; }
+    .sns1 > li > a { color:#fff; }
+    .sns1 > li > a:hover { text-decoration:underline; }
+
+    .sns2 {}
+    .sns2 > li { display:inline-block; margin-right:70px; }
+    .sns2 > li > a { color:#fff; }
+    .sns2 > li > a:hover { text-decoration:underline; }
+
+
+/*Global site 버튼*/
+
+.foot_toggle {}
+.toggle { position:relative; float:right; width:230px; text-align:left; font-size:15px; }
+.toggle button { position:absolute; font-family:'Gentium Book Plus'; top:390px;color:#ffcd41; background:#fff; border:none; padding:0 15px; cursor:pointer; text-align:left; line-height:30px; width:200px; right:146px;}
+.toggle button span { font-size:16px; }
+.toggle ul { display:none; position:absolute; bottom:-390px; right:146px;  border:1px solid #ffcd41; border-bottom:0; background:#4f4f4f; padding:0 15px; width:200px; }
+.toggle ul li { padding:8px 0; }
+.toggle ul li a { color:#fff; }
